@@ -29,3 +29,6 @@ Data Manipulation Language (DML) is the set of SQL statements that focuses on qu
 Data Definition Language (DDL) is the set of SQL statements that handles the definition and life cycle of database objects, such as tables, views, and procedures. DDL includes statements such as CREATE, ALTER, and DROP.
 
 Data Control Language (DCL) is the set of SQL statements used to manage security permissions for users and objects. DCL includes statements such as GRANT, REVOKE, and DENY
+
+## Data types in SQL
+[tutorials point](https://www.tutorialspoint.com/sql/sql-data-types.htm])
