@@ -2,7 +2,7 @@
 
 
 ## Structure 
-
+![](
 
 ## Common terms 
 
