@@ -41,3 +41,18 @@ Data Control Language (DCL) is the set of SQL statements used to manage security
 
 
 ![](https://www.sqlservertutorial.net/wp-content/uploads/SQL-Server-OFFSET-FETCH.png)
+
+`Example` -- To get the top 10 most expensive products you use both OFFSET and FETCH clauses:
+```
+SELECT
+    product_name,
+    list_price
+FROM
+    production.products
+ORDER BY
+    list_price DESC,
+    product_name 
+OFFSET 0 ROWS 
+FETCH FIRST 10 ROWS ONLY;
+
+```
