@@ -8,9 +8,9 @@
 
 ![](https://media-geeksforgeeks-org.cdn.ampproject.org/ii/w680/s/media.geeksforgeeks.org/wp-content/uploads/20201013102054/Hadoop_Schema_on_Read.png)
 
-## Common terms 
+[REFER GFG](https://www.geeksforgeeks.org/what-is-schema-on-read-and-schema-on-write-in-hadoop/)
 
-MANASI 
+## Common terms 
 
 SQL Server uses schemas to logically groups tables and other database objects. In our sample database, we have two schemas: sales and production. The sales schema groups all the sales-related tables while the production schema groups all the production-related tables.
 
