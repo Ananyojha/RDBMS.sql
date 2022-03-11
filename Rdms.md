@@ -36,3 +36,8 @@ Data Control Language (DCL) is the set of SQL statements used to manage security
 
 ## Data types in SQL
 [tutorials point](https://www.tutorialspoint.com/sql/sql-data-types.htm])
+
+## SQL COMMNADS 
+
+
+![](https://www.sqlservertutorial.net/wp-content/uploads/SQL-Server-OFFSET-FETCH.png)
