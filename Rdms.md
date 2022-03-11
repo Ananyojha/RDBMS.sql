@@ -2,7 +2,11 @@
 
 
 ## Structure 
-![](
+![]
+
+## Schema on read 
+
+![](https://media-geeksforgeeks-org.cdn.ampproject.org/ii/w680/s/media.geeksforgeeks.org/wp-content/uploads/20201013102054/Hadoop_Schema_on_Read.png)
 
 ## Common terms 
 
