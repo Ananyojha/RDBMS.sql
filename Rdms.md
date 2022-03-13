@@ -55,6 +55,12 @@ An operator is a reserved word or a character used primarily in an SQL statement
 All aggregate functions are deterministic."
  [More in MS DOCS](https://docs.microsoft.com/en-us/sql/t-sql/functions/aggregate-functions-transact-sql?view=sql-server-ver15#:~:text=An%20aggregate%20function%20performs%20a,All%20aggregate%20functions%20are%20deterministic.)
 
+**Aggerator Example** --
+```sql
+select count(Distinct CarName) from CAR -- count no. of rows with distinct values
+select CARID, CarName from CAR group by CarName,CARID order by CARID -- confirmm the result with this followed by select * from CAR
+```
+
 ## Data types in SQL
 [tutorials point](https://www.tutorialspoint.com/sql/sql-data-types.htm])
 
