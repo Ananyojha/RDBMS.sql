@@ -126,3 +126,6 @@ HAVING
     conditions;
 
 ```
+
+## Extra Reading 
+[Query Procedure](https://docs.microsoft.com/en-us/sql/relational-databases/query-processing-architecture-guide?view=sql-server-ver15)
