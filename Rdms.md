@@ -50,6 +50,10 @@ then "a, b, c" is the projection part, "where x=3" the selection part.
 - `operators in SQL` : What is an Operator in SQL?
 An operator is a reserved word or a character used primarily in an SQL statement's WHERE clause to perform operation(s), such as comparisons and arithmetic operations. 
 
+- `aggregation in SQL` : "An aggregate function performs a calculation on a set of values, and returns a single value. Except for COUNT(*), aggregate functions ignore null values. Aggregate functions are often used with the GROUP BY clause of the SELECT statement.
+
+All aggregate functions are deterministic."
+ [More in MS DOCS](https://docs.microsoft.com/en-us/sql/t-sql/functions/aggregate-functions-transact-sql?view=sql-server-ver15#:~:text=An%20aggregate%20function%20performs%20a,All%20aggregate%20functions%20are%20deterministic.)
 
 ## Data types in SQL
 [tutorials point](https://www.tutorialspoint.com/sql/sql-data-types.htm])
