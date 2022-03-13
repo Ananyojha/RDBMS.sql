@@ -61,6 +61,12 @@ select count(Distinct CarName) from CAR -- count no. of rows with distinct value
 select CARID, CarName from CAR group by CarName,CARID order by CARID -- confirmm the result with this followed by select * from CAR
 ```
 
+`AS for renaming Purpose` -
+```sql
+-- get the answer of the count clause and avg cluase under respective column name
+select count(*) as 'total rows', AVG(CARID) as 'avg value' from CAR
+```
+
 ## Data types in SQL
 [tutorials point](https://www.tutorialspoint.com/sql/sql-data-types.htm])
 
