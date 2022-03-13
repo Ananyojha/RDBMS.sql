@@ -1,3 +1,5 @@
+[MS DOCS -- T SQL](https://docs.microsoft.com/en-us/sql/t-sql/lesson-1-creating-database-objects?view=sql-server-ver15)
+
 ## What and Why RDBMS 
 
 
