@@ -66,6 +66,13 @@ select CARID, CarName from CAR group by CarName,CARID order by CARID -- confirmm
 -- get the answer of the count clause and avg cluase under respective column name
 select count(*) as 'total rows', AVG(CARID) as 'avg value' from CAR
 ```
+**Basic operators with select**
+```sql
+-- we use `AS` because it will create new column with new values in there 
+SELECT (CARID*2)+1 as '2x carid',CarName FROM CAR
+-- confirm your results
+select * from CAR
+```
 
 ## Data types in SQL
 [tutorials point](https://www.tutorialspoint.com/sql/sql-data-types.htm])
