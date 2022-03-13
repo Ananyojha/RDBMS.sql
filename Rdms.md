@@ -73,7 +73,21 @@ SELECT (CARID*2)+1 as '2x carid',CarName FROM CAR
 -- confirm your results
 select * from CAR
 ```
+**Group by to group the duplicate entries together**--
 
+```sql
+SELECT
+    city,
+    COUNT (customer_id) customer_count -- renaming the new column
+FROM
+    sales.customers
+GROUP BY
+    city
+ORDER BY
+    city;
+```
+
+In this example, the GROUP BY clause groups the customers together by city and the COUNT() function returns the number of customers in each city.
 ## Data types in SQL
 [tutorials point](https://www.tutorialspoint.com/sql/sql-data-types.htm])
 
