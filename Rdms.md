@@ -47,6 +47,10 @@ select a, b, c from foobar where x=3;
 ```
 then "a, b, c" is the projection part, "where x=3" the selection part.
 
+- `operators in SQL` : What is an Operator in SQL?
+An operator is a reserved word or a character used primarily in an SQL statement's WHERE clause to perform operation(s), such as comparisons and arithmetic operations. 
+
+
 ## Data types in SQL
 [tutorials point](https://www.tutorialspoint.com/sql/sql-data-types.htm])
 
