@@ -110,3 +110,17 @@ OFFSET 0 ROWS
 FETCH FIRST 10 ROWS ONLY;
 
 ```
+## Having 
+The HAVING clause is often used with the GROUP BY clause to filter groups based on a specified list of conditions.
+
+```sql
+SELECT
+    select_list
+FROM
+    table_name
+GROUP BY
+    group_list
+HAVING
+    conditions;
+
+```
