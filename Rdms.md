@@ -6,6 +6,8 @@
 
 ## Structure 
 ![]
+## Data types 
+![](https://www.sqlservertutorial.net/wp-content/uploads/SQL-Server-Data-Types-768x784.png)
 
 ## Schema on read 
 
