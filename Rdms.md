@@ -128,5 +128,9 @@ HAVING
 
 ```
 
+A schema is a collection of database objects including tables, views, triggers, stored procedures, indexes, etc. A schema is associated with a username which is known as the schema owner, who is the owner of the logically related database objects.
+
+A schema always belongs to one database. On the other hand, a database may have one or multiple schemas
+
 ## Extra Reading 
 [Query Procedure](https://docs.microsoft.com/en-us/sql/relational-databases/query-processing-architecture-guide?view=sql-server-ver15)
