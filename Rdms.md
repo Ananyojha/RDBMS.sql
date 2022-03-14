@@ -130,6 +130,19 @@ HAVING
 
 ```
 
+## Table 
+```sql
+CREATE TABLE sales.visits (
+    visit_id INT PRIMARY KEY IDENTITY (1, 1), -- says start from 1 then increase by 1 
+    first_name VARCHAR (50) NOT NULL, -- not null is constraints here 
+    last_name VARCHAR (50) NOT NULL,
+    visited_at DATETIME,
+    phone VARCHAR(20),
+    store_id INT NOT NULL,
+    FOREIGN KEY (store_id) REFERENCES sales.stores (store_id)
+);
+```
+
 A schema is a collection of database objects including tables, views, triggers, stored procedures, indexes, etc. A schema is associated with a username which is known as the schema owner, who is the owner of the logically related database objects.
 
 A schema always belongs to one database. On the other hand, a database may have one or multiple schemas
