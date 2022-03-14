@@ -18,7 +18,7 @@ Select LOWER('Synergetics Pvt Ltd').
 SELECT REVERSE('Synergetics Pvt Ltd')
 
 --6>Display only  'Synergetics' from text ' Synergetics Pvt Ltd'.
-
+SELECT SUBSTRING('Synergetics Pvt Ltd', 1,11) AS ExtractString;
 
 --7>Find 6 raised to the third power value 
 Select power(6,3) 
@@ -33,4 +33,4 @@ SELECT DATEADD(year, 1, '2017/08/25')
 SELECT DATEDIFF(year, '2020/03/13', '2015/08/25')
 
 --11> convert a string '2020-03-10' to a datetime value -  Using the CAST() function 
-cast('2020/03/10' as datetime)
+select cast('2020/03/10' as datetime)
