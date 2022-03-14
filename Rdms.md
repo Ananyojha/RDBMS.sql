@@ -8,7 +8,7 @@
 ![]
 ## Data types 
 ![](https://www.sqlservertutorial.net/wp-content/uploads/SQL-Server-Data-Types-768x784.png)
-
+[More here](https://www.sqlservertutorial.net/sql-server-basics/sql-server-data-types/)
 ## Schema on read 
 
 ![](https://media-geeksforgeeks-org.cdn.ampproject.org/ii/w680/s/media.geeksforgeeks.org/wp-content/uploads/20201013102054/Hadoop_Schema_on_Read.png)
