@@ -148,6 +148,44 @@ When you need to have combined answer of multiple Group by statement..
 You could also use union all clause here.. but that needs to have same number of coulmns in each select statement..BAD IDEA 
 
 [Know more here](https://sqlskull.com/2020/01/21/sql-server-grouping-sets/)
+
+## cube 
+Have all combination of Grouping Sets 
+```
+SELECT
+    d1,
+    d2,
+    d3,
+    aggregate_function (c4)
+FROM
+    table_name
+GROUP BY
+    GROUPING SETS (
+        (d1,d2,d3), 
+        (d1,d2),
+        (d1,d3),
+        (d2,d3),
+        (d1),
+        (d2),
+        (d3), 
+        ()
+     );
+```
+
+After using Cube -- 
+
+```
+SELECT
+    d1,
+    d2,
+    d3,
+    aggregate_function (c4)
+FROM
+    table_name
+GROUP BY
+    CUBE (d1, d2, d3);          
+```
+
 A schema is a collection of database objects including tables, views, triggers, stored procedures, indexes, etc. A schema is associated with a username which is known as the schema owner, who is the owner of the logically related database objects.
 
 A schema always belongs to one database. On the other hand, a database may have one or multiple schemas
