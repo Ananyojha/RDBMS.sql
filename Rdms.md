@@ -1,4 +1,5 @@
-[MS DOCS -- T SQL](https://docs.microsoft.com/en-us/sql/t-sql/lesson-1-creating-database-objects?view=sql-server-ver15)
+- [MS DOCS -- T SQL](https://docs.microsoft.com/en-us/sql/t-sql/lesson-1-creating-database-objects?view=sql-server-ver15)
+- [SQL build in functions](https://www.sqlservertutorial.net/sql-server-system-functions/)
 
 ## What and Why RDBMS 
 
