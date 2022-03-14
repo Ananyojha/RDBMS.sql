@@ -142,7 +142,12 @@ CREATE TABLE sales.visits (
     FOREIGN KEY (store_id) REFERENCES sales.stores (store_id)
 );
 ```
+## Grouping Sets 
+When you need to have combined answer of multiple Group by statement..
 
+You could also use union all clause here.. but that needs to have same number of coulmns in each select statement..BAD IDEA 
+
+[Know more here](https://sqlskull.com/2020/01/21/sql-server-grouping-sets/)
 A schema is a collection of database objects including tables, views, triggers, stored procedures, indexes, etc. A schema is associated with a username which is known as the schema owner, who is the owner of the logically related database objects.
 
 A schema always belongs to one database. On the other hand, a database may have one or multiple schemas
