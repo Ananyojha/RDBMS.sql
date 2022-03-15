@@ -214,5 +214,11 @@ Also knowm as left outer join. Displays `null` for values that appear in left ta
 
 ![](https://www.sqlservertutorial.net/wp-content/uploads/SQL-Server-Joins-Left-Join-diagram.png)
 
+### right join
+![](https://www.sqlservertutorial.net/wp-content/uploads/SQL-Server-Joins-Right-Join-Diagram.png)
+
+### full join 
+Union of both tables with **Null** in missing values 
+
 ## Extra Reading 
 [Query Procedure](https://docs.microsoft.com/en-us/sql/relational-databases/query-processing-architecture-guide?view=sql-server-ver15)
