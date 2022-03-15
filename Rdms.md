@@ -209,6 +209,10 @@ FROM
 INNER JOIN T2 ON join_condition;
 ```
 
+### left join 
+Also knowm as left outer join. Displays `null` for values that appear in left table but are missing in right table
+
+![](https://www.sqlservertutorial.net/wp-content/uploads/SQL-Server-Joins-Left-Join-diagram.png)
 
 ## Extra Reading 
 [Query Procedure](https://docs.microsoft.com/en-us/sql/relational-databases/query-processing-architecture-guide?view=sql-server-ver15)
