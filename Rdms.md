@@ -5,7 +5,8 @@
 
 
 ## Structure 
-![]
+
+
 ## Data types 
 ![](https://www.sqlservertutorial.net/wp-content/uploads/SQL-Server-Data-Types-768x784.png)
 [More here](https://www.sqlservertutorial.net/sql-server-basics/sql-server-data-types/)
@@ -23,6 +24,7 @@ constraints are the set of rules that ensures that when an authorized user modif
 
 SQL server storage engine is software used to create, read and update data between the disk and memory. The SQL server maps the database with files that store database objects, tables and indexes
 
+- `Clause` : A clause in SQL is a part of a query that lets you filter or customizes how you want your data to be queried to you
 ------_---------
 
 There is no concept of a first row, a second row, or a last row. Elements may be accessed (and retrieved) in any order. If you need to return results in a certain order, you must specify it explicitly by using an ORDER BY clause in your SELECT query.
