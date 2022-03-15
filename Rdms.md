@@ -190,5 +190,22 @@ A schema is a collection of database objects including tables, views, triggers, 
 
 A schema always belongs to one database. On the other hand, a database may have one or multiple schemas
 
+## Joins 
+
+### Inner Join :
+
+If table1 and Table 2 have same column (i.e somehow linked together) then inner join helps us to display the `matching pattern columns`
+
+![](https://www.sqlservertutorial.net/wp-content/uploads/SQL-Server-INNER-JOIN.png)
+
+```sql
+SELECT
+    select_list
+FROM
+    T1
+INNER JOIN T2 ON join_condition;
+```
+
+
 ## Extra Reading 
 [Query Procedure](https://docs.microsoft.com/en-us/sql/relational-databases/query-processing-architecture-guide?view=sql-server-ver15)
