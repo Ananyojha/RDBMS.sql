@@ -1,4 +1,5 @@
---Given to create env
+--Given :
+
 
 
 CREATE TABLE DEPT 
@@ -97,10 +98,23 @@ RIGHT JOIN SALGRADE on (group by emp.Sal and group by salgrade.grade)
 --plus Display the blank row / null rows for this department also .
 
 --7> Display the names and job titles of all employees with the same job as Jones.
+select ename,job
+from Emp
+where job = (select job from emp where ename = 'jones')
 
 --8> Display the name of the employee whose salary is the lowest.
+SELECT ename
+FROM Emp
+WHERE Sal IN (SELECT Min(sal) FROM
+emp group by Deptno);
 
 --9>List the employee details who earn highest salary for their job.
+SELECT ename
+FROM Emp
+WHERE Sal IN (SELECT Max(sal) FROM
+emp group by Deptno);
 
 --10> Display the names of all employees who work in a department that employs an analyst. 
-
+SELECT ename
+FROM Emp
+WHERE Sal IN 
