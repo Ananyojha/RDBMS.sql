@@ -194,6 +194,9 @@ A schema always belongs to one database. On the other hand, a database may have 
 
 ### Inner Join :
 
+`Helps to find common values`
+![](https://www.sqlservertutorial.net/wp-content/uploads/SQL-Server-Joins-Inner-Join-1.png)
+
 If table1 and Table 2 have same column (i.e somehow linked together) then inner join helps us to display the `matching pattern columns`
 
 ![](https://www.sqlservertutorial.net/wp-content/uploads/SQL-Server-INNER-JOIN.png)
