@@ -1,5 +1,4 @@
-Given :
-
+--Given to create env
 
 
 CREATE TABLE DEPT 
@@ -59,17 +58,33 @@ select * from emp;
 select * from Dept;
 select * from salgrade;
 
-/"
+/*
 
-SQL Assignment 4: Joins and Subqueries  
+SQL Assignment 4: Joins and Subqueries   */
 
 --1> Display the employee number , name , department number he is working , department name and location of his department 
+SELECT EmpNo,Ename,emp.DeptNo,dept.Dname,dept.Loc
+FROM Emp,DEPT -- REPLACE DEPT WHEN USING JOIN
+--right join DEPT on emp.Deptno = DEPT.DeptNo BUT IT ALSO INCLUDES A NULL ROW
+where emp.DeptNo = dept.DeptNo
+order by ename
 
 --2>List names ,jobs and deptno of the employee who are having the same job as that of the any empls of dept 20 
+SELECT distinct ename,job,dept.DeptNo
+from emp,DEPT
+where emp.job = (select emp.job where emp.Deptno = 20)
+order by job,ename
 
 --3> Display all the departments with the manager for that department.
+SELECT DEPT.Dname, Emp.Ename
+FROM Emp
+RIGHT JOIN DEPT on emp.Deptno = dept.DeptNo
+WHERE job = 'MANAGER'
 
 --4> Display the worker names and their grades based on salary range mentioned in salgrade table 
+SELECT emp.Ename, SALGRADE.GRADE
+from Emp
+RIGHT JOIN SALGRADE on (group by emp.Sal and group by salgrade.grade)
 
 --5> Display the worker name and his manager name 
 
@@ -89,4 +104,3 @@ SQL Assignment 4: Joins and Subqueries
 
 --10> Display the names of all employees who work in a department that employs an analyst. 
 
-*/
