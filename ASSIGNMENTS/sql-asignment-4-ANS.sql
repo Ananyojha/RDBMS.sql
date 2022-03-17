@@ -88,14 +88,28 @@ from Emp
 RIGHT JOIN SALGRADE on (group by emp.Sal and group by salgrade.grade)
 
 --5> Display the worker name and his manager name 
-
 -- eg SMITH works for FORD 
+--doubt--
+select * from emp 
+union
+SELECT emp.Ename, DEPT.Dname, Emp.Ename as manager
+FROM Emp
+RIGHT JOIN DEPT on emp.Deptno = dept.DeptNo
+WHERE job = 'MANAGER'
+group by Ename,emp.Deptno,DEPT.Dname
+
 
 -- 6> Department table has department 40, nobody works in this department . 
 
 --show list of all employees from respective departments 
 
---plus Display the blank row / null rows for this department also .
+--plus Display the blank row / null rows for this department also 
+
+select emp.ename, dept.Dname, dept.DeptNo
+from Emp
+full outer join dept on emp.Deptno = DEPT.DeptNo
+group by emp.ename, dept.DeptNo, dept.Dname
+
 
 --7> Display the names and job titles of all employees with the same job as Jones.
 select ename,job
@@ -115,6 +129,8 @@ WHERE Sal IN (SELECT Max(sal) FROM
 emp group by Deptno);
 
 --10> Display the names of all employees who work in a department that employs an analyst. 
-SELECT ename
+SELECT ename, dept.Dname
 FROM Emp
-WHERE Sal IN 
+right join DEPT on emp.Deptno = dept.DeptNo
+WHERE emp.Job = 'analyst' 
+group by ename, dept.Dname
