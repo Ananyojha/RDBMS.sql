@@ -140,6 +140,13 @@ EXEC sp_rename
 
 ```
 
+After you create a `unique index` you will not be able to insert duplicate values into the table i.e duplicate combination like (1,1) cannot be inserted again while 1,2 can be inserted
+
+```sql
+CREATE UNIQUE INDEX ix_uniq_ab 
+ON t1(a, b);
+```
+
 ## SQL COMMNADS 
 
 
@@ -172,6 +179,20 @@ GROUP BY
 HAVING
     conditions;
 
+```
+
+#### check for duplicate email
+
+```sql
+SELECT 
+    email, 
+    COUNT(email)
+FROM 
+    sales.customers
+GROUP BY 
+    email
+HAVING 
+    COUNT(email) > 1;
 ```
 
 ## Table 
