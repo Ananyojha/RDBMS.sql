@@ -106,7 +106,18 @@ CPU checks if the block contains the data required or not. If yes recieves block
 
 ![]()
 
+When you create a table with a primary key, SQL Server automatically creates a corresponding clustered index based on columns included in the primary key.
 
+If you add a primary key constraint to an existing table that already has a clustered index, SQL Server will enforce the primary key using a non-clustered index:
+
+In case a table does not have a primary key, which is very rare, you can use the CREATE CLUSTERED INDEX statement to define a clustered index for the table.
+
+```sql
+
+CREATE CLUSTERED INDEX ix_parts_id
+ON production.parts (part_id);  
+
+```
 
 ## SQL COMMNADS 
 
