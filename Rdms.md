@@ -119,6 +119,27 @@ ON production.parts (part_id);
 
 ```
 
+## Non Clustered Index
+
+```sql
+-- this command create a non clustered index
+CREATE INDEX ix_customers_city
+ON sales.customers(city);
+```
+
+When you create a nonclustered index that consists of multiple columns, the order of the columns in the index is very important. You should place the columns that you often use to query data at the beginning of the column list.
+
+## renaming Indexes
+For example, the following statement renames the index ix_customers_city of the sales.customers table to ix_cust_city:
+
+```sql
+EXEC sp_rename 
+        @objname = N'sales.customers.ix_customers_city',
+        @newname = N'ix_cust_city' ,
+        @objtype = N'INDEX';
+
+```
+
 ## SQL COMMNADS 
 
 
