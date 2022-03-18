@@ -98,6 +98,16 @@ In this example, the GROUP BY clause groups the customers together by city and t
 ## Data types in SQL
 [tutorials point](https://www.tutorialspoint.com/sql/sql-data-types.htm])
 
+## SQL indexing 
+
+SQL query --> CPU (Millions Instructions per Second) : recieves and process the request ---> RAM (temporary memory) : CPU TOO fast HDD slow so RAM interacts with both ----> Hard disk (data divided in equal size Block)
+
+CPU checks if the block contains the data required or not. If yes recieves block and forward that to CPU (hit) Else returns the block back to HDD (fail) -- IO cost 
+
+![]()
+
+
+
 ## SQL COMMNADS 
 
 
