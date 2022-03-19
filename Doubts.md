@@ -21,6 +21,7 @@ Order by g.grade DESC
 
 ```
 
+[The blunder](https://www.hackerrank.com/challenges/the-blunder/problem)
 
 
 [The challenge](https://www.hackerrank.com/challenges/full-score/problem)
@@ -33,7 +34,7 @@ REQUIREMENTS
 If same no. Of challenge won - ASC hackerid
 */
 
-
+```
 
 
 #### group sets
