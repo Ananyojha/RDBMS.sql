@@ -140,7 +140,7 @@ EXEC sp_rename
 
 ```
 
-After you create a `unique index` you will not be able to insert duplicate values into the table i.e duplicate combination like (1,1) cannot be inserted again while 1,2 can be inserted
+After you create a `unique index` you will not be able to insert duplicate values into the table i.e duplicate combination like (1,1) cannot be inserted again while 1,2 can be inserted EVEN NULL CAN NOT BE REPEATED 
 
 ```sql
 CREATE UNIQUE INDEX ix_uniq_ab 
