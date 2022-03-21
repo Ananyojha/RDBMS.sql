@@ -285,5 +285,26 @@ Also knowm as left outer join. Displays `null` for values that appear in left ta
 ### full join 
 Union of both tables with **Null** in missing values 
 
+## Subquery
+`Ms docs says` --
+
+A subquery is a query that is nested inside a SELECT, INSERT, UPDATE, or DELETE statement, or inside another subquery.
+
+```sql
+-- Common Subquery Patterns 
+WHERE expression \[NOT] IN (subquery)
+WHERE expression comparison_operator \[ANY | ALL] (subquery)
+WHERE \[NOT] EXISTS (subquery)
+```
+
+**Correlated Subquery**
+In queries that include a correlated subquery (also known as a repeating subquery), the subquery depends on the outer query for its values.
+
+```sql
+Where 
+In 
+= 
+```
+
 ## Extra Reading 
 [Query Procedure](https://docs.microsoft.com/en-us/sql/relational-databases/query-processing-architecture-guide?view=sql-server-ver15)
