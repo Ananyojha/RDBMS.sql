@@ -60,10 +60,9 @@ Correlated subqueries are used for row-by-row processing. Each subquery is execu
 
 */
 
-SELECT last_name, salary, department_id
- FROM employees outer
+SELECT emp, sal, hiredate
+ FROM emp
  WHERE salary >
-                (SELECT AVG(salary)
-                 FROM sal
-                 WHERE department_id =
-                        outer.department_id);
+                (SELECT AVG(losal + hisal)
+                 FROM sal)
+   
