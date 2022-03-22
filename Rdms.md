@@ -4,6 +4,9 @@
 ## What and Why RDBMS 
 
 
+## How Query Process 
+[From GFG](https://www.geeksforgeeks.org/sql-query-processing/)
+
 ## Structure 
 [GFG](https://www.geeksforgeeks.org/introduction-of-3-tier-architecture-in-dbms-set-2/)
 
