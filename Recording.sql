@@ -6,12 +6,40 @@ select * from salgrade;
 
 
 
+-- Inner join 
+
+SELECT * 
+From emp 
+Inner join on emp.deptno = dept.deptno
+
+-- right join 
 
 
+SELECT * 
+From emp 
+Right join on emp.deptno = dept.deptno
 
 
+-- left join 
 
 
+SELECT * 
+From emp 
+Left join on emp.deptno = dept.deptno
+
+
+-- Outer Join
+
+
+SELECT * 
+From emp 
+Full join on emp.deptno = dept.deptno
+
+
+-- Cross join 
+
+SELECT * 
+From emp,dept
 
 
 -- Display the names and job titles of all employees with the same job as Jones.
