@@ -2,6 +2,8 @@ select * from emp;
 select * from Dept;
 select * from salgrade;
 
+-- *********** JOINS ************
+
 
 
 
