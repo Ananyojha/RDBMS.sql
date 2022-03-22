@@ -5,7 +5,7 @@
 
 
 ## Structure 
-
+[GFG](https://www.geeksforgeeks.org/introduction-of-3-tier-architecture-in-dbms-set-2/)
 
 ## Data types 
 ![](https://www.sqlservertutorial.net/wp-content/uploads/SQL-Server-Data-Types-768x784.png)
