@@ -48,8 +48,11 @@ Find out all departments and thier respective employees
 
 
 /*
+It is a SUBQUERY that uses value from outer query
+
 Correlated subqueries are used for row-by-row processing. 
 Each subquery is executed once for every row of the outer query.
+
 
 */
 
