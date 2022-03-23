@@ -2,6 +2,8 @@ select * from emp;
 select * from Dept;
 select * from salgrade;
 
+
+
 -- *********** JOINS ************
 
 
@@ -10,14 +12,14 @@ select * from salgrade;
 
 SELECT * 
 From emp 
-Inner join on emp.deptno = dept.deptno
+Inner join DEPT on emp.deptno = DEPT.DeptNo
 
 -- right join 
 
 
 SELECT * 
 From emp 
-Right join on emp.deptno = dept.deptno
+Right join dept on emp.deptno = dept.deptno
 
 
 -- left join 
@@ -25,7 +27,7 @@ Right join on emp.deptno = dept.deptno
 
 SELECT * 
 From emp 
-Left join on emp.deptno = dept.deptno
+Left join DEPT on emp.deptno = dept.deptno
 
 
 -- Outer Join
@@ -33,7 +35,7 @@ Left join on emp.deptno = dept.deptno
 
 SELECT * 
 From emp 
-Full join on emp.deptno = dept.deptno
+Full join dept on emp.deptno = dept.deptno
 
 
 -- Cross join 
@@ -56,13 +58,13 @@ WHERE Sal IN (SELECT Max(sal) FROM
 emp group by Deptno);
 
 /*
-Correlated subqueries are used for row-by-row processing. Each subquery is executed once for every row of the outer query.
+Correlated subqueries are used for row-by-row processing. 
+Each subquery is executed once for every row of the outer query.
 
 */
 
-SELECT emp, sal, hiredate
+SELECT Ename, sal, hiredate
  FROM emp
- WHERE salary >
-                (SELECT AVG(losal + hisal)
-                 FROM sal)
+ WHERE sal > (SELECT AVG(hisal)
+                 FROM SALGRADE)
    
