@@ -10,12 +10,19 @@ select * from salgrade;
 
 -- Inner join 
 
+/*
+Find all employees who have been 
+assigned the departments. 
+*/
+
 SELECT * 
 From emp 
 Inner join DEPT on emp.deptno = DEPT.DeptNo
 
 -- right join 
-
+/*
+Find out all departments and thier respective employees
+*/
 
 SELECT * 
 From emp 
@@ -23,15 +30,15 @@ Right join dept on emp.deptno = dept.deptno
 
 
 -- left join 
-
+/* Find out all employees and there respective departments*/
 
 SELECT * 
 From emp 
 Left join DEPT on emp.deptno = dept.deptno
 
 
--- Outer Join
-
+-- Full Outer Join
+/* Find all details about every employee and every department */
 
 SELECT * 
 From emp 
