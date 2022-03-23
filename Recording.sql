@@ -70,8 +70,9 @@ Each subquery is executed once for every row of the outer query.
 
 */
 
-SELECT Ename, sal, hiredate
- FROM emp
- WHERE sal > (SELECT AVG(hisal)
-                 FROM SALGRADE)
+SELECT * 
+From emp 
+Where exists ( select 
+From dept
+Where emp.deptNo = dept.deptNo)
    
