@@ -53,5 +53,7 @@ Each subquery is executed once for every row of the outer query.
 
 */
 
+-- find all employees who work in a department
+
 
    
